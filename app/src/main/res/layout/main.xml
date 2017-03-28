@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+        <EditText
+            android:layout_width="150dip"
+            android:layout_height="50dip"
+            android:id="@+id/input_edittext"
+            />
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:id="@+id/btnJSON" android:text="Get Weather Info"></Button>
+    </LinearLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ScrollView01" android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal">
+            <ListView android:id="@+id/ListView01"
+                android:layout_width="350dip"
+                android:layout_height="1400dip"
+                android:background="#666666"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
